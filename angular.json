@@ -28,8 +28,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "../mybooking/node_modules/bootstrap/dist/css/bootstrap.css"
             ],
+             "stylePreprocessorOptions": {
+                "includePaths": [
+                  "src/styles"
+                ]
+              },
             "scripts": []
           },
           "configurations": {
@@ -123,6 +129,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "mybooking"
+    }
+  },
+  "defaultProject": "mybooking",
+  "cli": {
+    "analytics": "0ebb773f-a1eb-437b-83ea-ab5f5c2ae4de"
+  }
 }
