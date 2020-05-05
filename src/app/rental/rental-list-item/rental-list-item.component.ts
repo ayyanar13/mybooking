@@ -6,7 +6,7 @@ import { Component, OnInit,Input} from '@angular/core';
   styleUrls: ['./rental-list-item.component.scss']
 })
 export class RentalListItemComponent implements OnInit {
-  @Input rental:any; 
+  @Input() rental:any; 
 
   constructor() { }
 
