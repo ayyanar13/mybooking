@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule,Routes} from '@angular/router'
+import {NgPipesModule} from 'ngx-pipes';
 
 
 
@@ -28,7 +29,8 @@ children:[{path:"",component:RentalListComponent},
     RentalDetailsComponent
   ],
   imports:[CommonModule,
-  RouterModule.forChild(appRoutes)
+  RouterModule.forChild(appRoutes),
+  NgPipesModule
   ],
   providers:[ RentalService]
 

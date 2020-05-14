@@ -11,7 +11,6 @@ router.get('',(req,res)=>{
 })
 router.get('/:id',(req,res)=>{
 	const rentalid=req.params.id
-	console.log("zfdsf",rentalid)
 	Rental.findById(rentalid, function (err, foundrental) {
 		if(err){
 			res.status(422).send("erroe ACCOURS")
